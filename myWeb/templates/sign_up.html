@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Sign Up Page{% endblock %}
+
+{% block content %}
+<img src="static\img-05.jpg" class="rounded mx-auto d-block"  alt="...">
+<form method="POST">
+    <h3 align="center">Sign Up</h3>
+<div align="center"> 
+    <div class="col-md-4">
+      <label for="email"><h6>Email Address</h6></label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="Enter email"
+
+      />
+    </div>
+  
+    <div  class="col-md-4">
+      <label for="firstName"><h6>First Name</h6></label>
+      <input
+        type="text"
+        class="form-control"
+        id="firstName"
+        name="firstName"
+        placeholder="Enter first name"
+      />
+    </div>
+    <div class="col-md-4">
+        <label for="lastName"><h6>Last Name</h6></label>
+        <input
+          type="text"
+          class="form-control"
+          id="lastName"
+          name="lastName"
+          placeholder="Enter Last name"
+        />
+      </div>
+    <div class="col-md-4">
+      <label for="password1"><h6>Password</h6></label>
+      <input
+        type="password"
+        class="form-control"
+        id="password1"
+        name="password1"
+        placeholder="Enter password"
+      />
+    </div>
+    <div class="col-md-4">
+      <label for="password2"><h6>Password (Confirm)</h6></label>
+      <input
+        type="password"
+        class="form-control"
+        id="password2"
+        name="password2"
+        placeholder="Confirm password"
+      />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+{% endblock %}
